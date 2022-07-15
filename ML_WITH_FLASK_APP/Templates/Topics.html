@@ -1,0 +1,8 @@
+{% extends 'Layout.html' %} 
+ {% block content%}     
+    {% for topic in topics %}
+    <h1>{{topic.Title}}</h1>
+    <p><b>Problem</p></b>:{{topic.Problem}} </p>
+    <p><b>Explanation</b>: {{topic.Explanation}}</p>
+    {% endfor %}
+ {% endblock content %}
